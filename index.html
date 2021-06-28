@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Interactive Quiz Application</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- nav -->
+    <nav class="navbar">
+      <div class="container">
+        <div class="logo-area">
+          <h2 class="logo">Blizzard</h2>
+        </div>
+        <ul class="links">
+          <li><a href="#home" class="link">Home</a></li>
+          <li><a href="#results" class="link">Results</a></li>
+          <li><a href="#quiz" class="link">Quiz</a></li>
+        </ul>
+      </div>
+    </nav>
+    <!-- header -->
+    <header id="home">
+      <div class="container">
+        <h1 class="quiz-title">World of Warcraft Quiz</h1>
+        <p class="quiz-description">
+          Are you the ultimate World of Warcraft fan? Then test your mettle,
+          skill, and your knowledge. World of Warcraft has expansive lore. How
+          much do you really know about the world of Azeroth? This quiz will
+          help you find out. Discover new lore facts about the Legion. Learn
+          more about the Scourge, and set sail on a journey. The Ultimate World
+          of Warcraft quiz and trivia will mark your place as one of the
+          greatest Warcraft fans.
+        </p>
+        <button class="take-quiz-btn">
+          <a href="#quiz">Start Your Quest</a>
+        </button>
+      </div>
+    </header>
+
+    <!-- results (display none by default) -->
+    <div id="results" class="hide">
+      <h2 class="results-text">
+        You are a <span class="result-percent">0%</span> loremaster!
+      </h2>
+    </div>
+
+    <section class="pre-quiz">
+      <div class="container">
+        <h2 class="quiz-title-one">
+          Are You The Ultimate World Of Warcraft Fan?
+        </h2>
+        <h2 class="quiz-title-two">Test Your Knowledge!</h2>
+        <img src="/img/lk.jpeg" alt="" class="quiz-start-img" />
+      </div>
+    </section>
+
+    <section id="quiz">
+      <div class="container">
+        <form class="quiz-form">
+          <h2 class="question-title">Begin the quiz...</h2>
+          <!-- question 1 -->
+          <div class="question">
+            <p class="q-text">
+              1. Who was the Archbishop of the Church of the Light who betrayed
+              everyone during Cataclysm?
+            </p>
+
+            <div class="option">
+              <input type="radio" name="q1" value="A" checked />
+              <label class="answer-option">Khadgar</label>
+            </div>
+
+            <div class="option">
+              <input type="radio" name="q1" value="B" />
+              <label class="answer-option">Medivh</label>
+            </div>
+
+            <div class="option">
+              <input type="radio" name="q1" value="C" />
+              <label class="answer-option">Benedictus</label>
+            </div>
+
+            <div class="option">
+              <input type="radio" name="q1" value="D" />
+              <label class="answer-option">Uther</label>
+            </div>
+          </div>
+
+          <!-- question 2 -->
+          <div class="question">
+            <p class="q-text">
+              2. What name means "Keeper of Secrets" in Thalassian?
+            </p>
+
+            <div class="option">
+              <input type="radio" name="q2" value="A" checked />
+              <label class="answer-option">Arthas</label>
+            </div>
+
+            <div class="option">
+              <input type="radio" name="q2" value="B" />
+              <label class="answer-option">Thrall</label>
+            </div>
+
+            <div class="option">
+              <input type="radio" name="q2" value="C" />
+              <label class="answer-option">Anduin</label>
+            </div>
+
+            <div class="option">
+              <input type="radio" name="q2" value="D" />
+              <label class="answer-option">Medivh</label>
+            </div>
+          </div>
+
+          <!-- question 3 -->
+          <div class="question">
+            <p class="q-text">
+              3. Who Is The High Commander Of The Grand Army Of The Light?
+            </p>
+
+            <div class="option">
+              <input type="radio" name="q3" value="A" checked />
+              <label class="answer-option">Lothraxion</label>
+            </div>
+
+            <div class="option">
+              <input type="radio" name="q3" value="B" />
+              <label class="answer-option">Vol'jin</label>
+            </div>
+
+            <div class="option">
+              <input type="radio" name="q3" value="C" />
+              <label class="answer-option">Khadgar</label>
+            </div>
+
+            <div class="option">
+              <input type="radio" name="q3" value="D" />
+              <label class="answer-option">Turalyon</label>
+            </div>
+          </div>
+
+          <!-- question 4 -->
+          <div class="question">
+            <p class="q-text">
+              4. Which character exists within the Warcraft comics but has never
+              appeared in the game World Of Warcraft?
+            </p>
+
+            <div class="option">
+              <input type="radio" name="q4" value="A" checked />
+              <label class="answer-option">Jarod Shadowsong</label>
+            </div>
+
+            <div class="option">
+              <input type="radio" name="q4" value="B" />
+              <label class="answer-option">Medivh</label>
+            </div>
+
+            <div class="option">
+              <input type="radio" name="q4" value="C" />
+              <label class="answer-option">Me'dan</label>
+            </div>
+
+            <div class="option">
+              <input type="radio" name="q4" value="D" />
+              <label class="answer-option">Old Blanchy</label>
+            </div>
+          </div>
+
+          <!-- question 5 -->
+          <div class="question">
+            <p class="q-text">
+              5. What is the name of the Nathrezim's homeworld?
+            </p>
+
+            <div class="option">
+              <input type="radio" name="q5" value="A" checked />
+              <label class="answer-option">Draenor</label>
+            </div>
+
+            <div class="option">
+              <input type="radio" name="q5" value="B" />
+              <label class="answer-option">Nathreza</label>
+            </div>
+
+            <div class="option">
+              <input type="radio" name="q5" value="C" />
+              <label class="answer-option">Nihilam</label>
+            </div>
+
+            <div class="option">
+              <input type="radio" name="q5" value="D" />
+              <label class="answer-option">Azeroth</label>
+            </div>
+          </div>
+
+          <!-- question 6 -->
+          <div class="question">
+            <p class="q-text">6. Who is the leader of the Pantheon?</p>
+
+            <div class="option">
+              <input type="radio" name="q6" value="A" checked />
+              <label class="answer-option">Sargeras</label>
+            </div>
+
+            <div class="option">
+              <input type="radio" name="q6" value="B" />
+              <label class="answer-option">Elune</label>
+            </div>
+
+            <div class="option">
+              <input type="radio" name="q6" value="C" />
+              <label class="answer-option">Aman'thul</label>
+            </div>
+
+            <div class="option">
+              <input type="radio" name="q6" value="D" />
+              <label class="answer-option">Eonar</label>
+            </div>
+          </div>
+
+          <!-- question 7 -->
+          <div class="question">
+            <p class="q-text">7. Who became the Lich King after Arthas?</p>
+
+            <div class="option">
+              <input type="radio" name="q7" value="A" checked />
+              <label class="answer-option">Bolvar</label>
+            </div>
+
+            <div class="option">
+              <input type="radio" name="q7" value="B" />
+              <label class="answer-option">Anduin</label>
+            </div>
+
+            <div class="option">
+              <input type="radio" name="q7" value="C" />
+              <label class="answer-option">Jaina</label>
+            </div>
+
+            <div class="option">
+              <input type="radio" name="q7" value="D" />
+              <label class="answer-option">Sylvanas</label>
+            </div>
+          </div>
+
+          <!-- question 8 -->
+          <div class="question">
+            <p class="q-text">
+              8. What is the planet Draenor called by the Orgres?
+            </p>
+
+            <div class="option">
+              <input type="radio" name="q8" value="A" checked />
+              <label class="answer-option">Botani</label>
+            </div>
+
+            <div class="option">
+              <input type="radio" name="q8" value="B" />
+              <label class="answer-option">Lethule</label>
+            </div>
+
+            <div class="option">
+              <input type="radio" name="q8" value="C" />
+              <label class="answer-option">Rakshar</label>
+            </div>
+
+            <div class="option">
+              <input type="radio" name="q8" value="D" />
+              <label class="answer-option">Dawgar</label>
+            </div>
+          </div>
+
+          <!-- question 9 -->
+          <div class="question">
+            <p class="q-text">9. Who were the Ghostriders of Karabor?</p>
+
+            <div class="option">
+              <input type="radio" name="q9" value="A" checked />
+              <label class="answer-option">The Blood Knights</label>
+            </div>
+
+            <div class="option">
+              <input type="radio" name="q9" value="B" />
+              <label class="answer-option">The Original Death Knights</label>
+            </div>
+
+            <div class="option">
+              <input type="radio" name="q9" value="C" />
+              <label class="answer-option">The Broken</label>
+            </div>
+
+            <div class="option">
+              <input type="radio" name="q9" value="D" />
+              <label class="answer-option">The Army of Light</label>
+            </div>
+          </div>
+
+          <!-- question 10 -->
+          <div class="question">
+            <p class="q-text">10. Who are the N'raqi?</p>
+
+            <div class="option">
+              <input type="radio" name="q10" value="A" checked />
+              <label class="answer-option">The Titans</label>
+            </div>
+
+            <div class="option">
+              <input type="radio" name="q10" value="B" />
+              <label class="answer-option">The Burning Legion</label>
+            </div>
+
+            <div class="option">
+              <input type="radio" name="q10" value="C" />
+              <label class="answer-option">The Faceless Ones</label>
+            </div>
+
+            <div class="option">
+              <input type="radio" name="q10" value="D" />
+              <label class="answer-option">The Void Lords</label>
+            </div>
+          </div>
+
+          <!-- submit button -->
+          <div class="submit-btn-area">
+            <input type="submit" class="submit-btn" />
+          </div>
+        </form>
+      </div>
+    </section>
+    <script src="/app.js"></script>
+  </body>
+</html>
